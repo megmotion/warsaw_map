@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Navigation  = () => {
+const Navigation  = (props) => {
 	return(
-		<h1>Navigation</h1>
+		<div style={{position:'absolute', background:'grey'}}>
+			<button onClick={props.toggleSidebar}>☰</button>
+		</div>
 	)
 }
 export default Navigation;

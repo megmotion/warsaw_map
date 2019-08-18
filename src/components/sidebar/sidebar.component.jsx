@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SidebarContainer } from './sidebar.styles';
+
 const Sidebar  = (props) => {
 	const listItems = props.cinemas.map((cinema) =>
     	<li key={cinema.properties.title}>
@@ -8,7 +10,7 @@ const Sidebar  = (props) => {
 	)
 
 	return(
-		<div style={{position:'absolute', top:70, background:'grey'}}>
+		<SidebarContainer showSidebar={props.showSidebar}>
 			<div>
 				<div>
 					<input
@@ -21,7 +23,7 @@ const Sidebar  = (props) => {
 					<ul>{listItems}</ul>
 				</div>
 			</div>
-		</div>
+		</SidebarContainer>
 	)
 }
 export default Sidebar;

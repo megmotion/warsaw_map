@@ -4,9 +4,6 @@ import mapboxgl from 'mapbox-gl'
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 class WarsawMap extends React.Component {
-	constructor(props) {
-	  super(props);
-	}
 	    
 	componentDidMount() {
 		this.warsawMap = new mapboxgl.Map({

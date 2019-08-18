@@ -9,8 +9,17 @@ class App extends Component {
     super()
     this.state = {
       cinemas: cinemas,
-      searchfield: ''
+      searchfield: '',
+      showSidebar: true,
     }
+  }
+
+  toggleSidebar = () => {
+    this.setState(prevState => ({
+      showSidebar: !prevState.showSidebar
+    }));
+
+    console.log(this.state.showSidebar)
   }
 
   onSearchChange = (event) => {
@@ -26,8 +35,8 @@ class App extends Component {
     return (
       <div className="App">     
         <WarsawMap cinemas={filteredCinemas} />
-        <Navigation />
-        <Sidebar cinemas={filteredCinemas} searchChange={this.onSearchChange}/>
+        <Navigation toggleSidebar={this.toggleSidebar}/>
+        <Sidebar cinemas={filteredCinemas} searchChange={this.onSearchChange} showSidebar={this.state.showSidebar}/>
       </div>
     );
   }
