@@ -16,10 +16,24 @@ class WarsawMap extends React.Component {
 			zoom: 12
     	});
 
-    	this.props.cinemas.forEach(marker => {
-			new mapboxgl.Marker()
-			.setLngLat(marker.geometry.coordinates)
+    	this.props.cinemas.forEach(cinema => {
+			let marker = new mapboxgl.Marker()
+			.setLngLat(cinema.geometry.coordinates)
 			.addTo(this.warsawMap);
+			cinema.marker=marker
+		});
+	}
+
+	componentDidUpdate(prevProps){
+		prevProps.cinemas.forEach(cinema => {
+    		cinema.marker.remove()
+		})
+
+		this.props.cinemas.forEach(cinema => {
+			let marker = new mapboxgl.Marker()
+			.setLngLat(cinema.geometry.coordinates)
+			.addTo(this.warsawMap);
+			cinema.marker=marker
 		});
 	}
   

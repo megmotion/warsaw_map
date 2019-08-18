@@ -8,15 +8,26 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      cinemas: cinemas
+      cinemas: cinemas,
+      searchfield: ''
     }
   }
+
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value })
+  }
+
   render() {
+    const { cinemas, searchfield } = this.state
+    const filteredCinemas = cinemas.filter(cinema =>{
+      return cinema.properties.title.toLowerCase().includes(searchfield.toLowerCase());
+    })
+
     return (
       <div className="App">     
-        <WarsawMap cinemas={this.state.cinemas} />
+        <WarsawMap cinemas={filteredCinemas} />
         <Navigation />
-        <Sidebar/>
+        <Sidebar cinemas={filteredCinemas} searchChange={this.onSearchChange}/>
       </div>
     );
   }
