@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navigation from './components/navigation/navigation.component';
 import WarsawMap from './components/map/map.component';
 import Sidebar from './components/sidebar/sidebar.component';
-import './App.css';
+import cinemas from './cinemas'
 
-function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      <Sidebar />
-      <WarsawMap />
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      cinemas: cinemas
+    }
+  }
+  render() {
+    return (
+      <div className="App">     
+        <WarsawMap cinemas={this.state.cinemas} />
+        <Navigation />
+        <Sidebar/>
+      </div>
+    );
+  }
 }
 
 export default App;
