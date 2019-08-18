@@ -1,26 +1,26 @@
 import React from 'react';
 
-import { SidebarContainer } from './sidebar.styles';
+import { SidebarContainer, InputContainer, StyledInput, List, ListItem} from './sidebar.styles';
 
 const Sidebar  = (props) => {
 	const listItems = props.cinemas.map((cinema) =>
-    	<li key={cinema.properties.title}>
+    	<ListItem key={cinema.properties.title}>
 	      {cinema.properties.title}
-	    </li>
+	    </ListItem>
 	)
 
 	return(
 		<SidebarContainer showSidebar={props.showSidebar}>
 			<div>
-				<div>
-					<input
+				<InputContainer>
+					<StyledInput
 				        type='search'
 				        placeholder='filter cinemas'
 				        onChange={props.searchChange}
 				      />
-				</div>
+				</InputContainer>
 				<div>
-					<ul>{listItems}</ul>
+					<List>{listItems}</List>
 				</div>
 			</div>
 		</SidebarContainer>

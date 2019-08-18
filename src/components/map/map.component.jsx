@@ -8,7 +8,7 @@ class WarsawMap extends React.Component {
 	componentDidMount() {
 		this.warsawMap = new mapboxgl.Map({
 			container: this.mapContainer,
-			style: 'mapbox://styles/mapbox/streets-v11',
+			style: 'mapbox://styles/mapbox/dark-v9',
 			center: [21, 52.25],
 			zoom: 12
     	});
