@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { NavigationContainer, NavigationButton } from './navigation.styles';
+
 const Navigation  = (props) => {
 	return(
-		<div style={{position:'absolute', background:'grey'}}>
-			<button onClick={props.toggleSidebar}>☰</button>
-		</div>
+		<NavigationContainer>
+			<NavigationButton onClick={props.toggleSidebar}>☰</NavigationButton>
+		</NavigationContainer>
 	)
 }
 export default Navigation;
