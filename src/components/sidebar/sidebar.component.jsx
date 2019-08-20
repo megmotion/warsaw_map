@@ -10,19 +10,15 @@ const Sidebar  = (props) => {
 	)
 
 	return(
-		<SidebarContainer showSidebar={props.showSidebar}>
-			<div>
-				<InputContainer>
-					<StyledInput
-				        type='search'
-				        placeholder='filter cinemas'
-				        onChange={props.searchChange}
-				      />
-				</InputContainer>
-				<div>
-					<List>{listItems}</List>
-				</div>
-			</div>
+		<SidebarContainer showSidebar={props.showSidebar}>	
+			<InputContainer>
+				<StyledInput
+			        type='search'
+			        placeholder='filter cinemas'
+			        onChange={props.searchChange}
+			      />
+			</InputContainer>
+			<List>{listItems}</List>		
 		</SidebarContainer>
 	)
 }

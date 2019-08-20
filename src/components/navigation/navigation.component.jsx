@@ -4,7 +4,7 @@ import { NavigationContainer, NavigationButton } from './navigation.styles';
 
 const Navigation  = (props) => {
 	return(
-		<NavigationContainer>
+		<NavigationContainer showSidebar={props.showSidebar}>
 			<NavigationButton onClick={props.toggleSidebar}>☰</NavigationButton>
 		</NavigationContainer>
 	)

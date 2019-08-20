@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">     
         <WarsawMap cinemas={filteredCinemas} />
-        <Navigation toggleSidebar={this.toggleSidebar}/>
+        <Navigation toggleSidebar={this.toggleSidebar} showSidebar={this.state.showSidebar}/>
         <Sidebar cinemas={filteredCinemas} searchChange={this.onSearchChange} showSidebar={this.state.showSidebar}/>
       </div>
     );

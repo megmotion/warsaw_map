@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const SidebarContainer = styled.div`
 	position: absolute; 
-	top:10%; 
-	background:rgba(63,177,206,0.8);
+	top: 5vh; 
+	background: rgba(63,177,206,0.8);
 	border-radius: 8px;
 	transform: translate3d(0, 0, 0);
 	transition: 0.5s ease;
@@ -11,14 +11,12 @@ const SidebarContainer = styled.div`
 `;
 
 const InputContainer = styled.div`
-	padding: 16px 20px;
-
+	padding: 3vh 1vw ;
 `;
 
 const StyledInput = styled.input`
-	width: 100%;
+	width:15vw;
 	padding: 10px 16px;
-	border-width: 1px;
 	border-style: solid;
 	border-color: white;
 	border-radius: 8px;
@@ -28,8 +26,8 @@ const StyledInput = styled.input`
 const List = styled.ul`
 	list-style-type: none;
 	padding-inline-start: 30px;
-	padding-bottom:10px;
-	margin-top:5px;
+	padding-bottom:5px;
+
 	color: #BBBBBB;
 	font-weight: 500;
 	font-size: 20px;
