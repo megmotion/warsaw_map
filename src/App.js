@@ -18,8 +18,6 @@ class App extends Component {
     this.setState(prevState => ({
       showSidebar: !prevState.showSidebar
     }));
-
-    console.log(this.state.showSidebar)
   }
 
   onSearchChange = (event) => {
