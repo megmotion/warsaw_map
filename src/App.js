@@ -11,7 +11,17 @@ class App extends Component {
       cinemas: cinemas,
       searchfield: '',
       showSidebar: true,
+      hoveredItem: '',
     }
+  }
+
+  onMouseEnter = (e) => {
+    this.setState({ isHovered: true });
+    this.setState({ hoveredItem: e.target.innerHTML });
+  }
+
+  onMouseLeave = (e) => {
+    this.setState({ hoveredItem: '' });
   }
 
   toggleSidebar = () => {
@@ -32,9 +42,19 @@ class App extends Component {
 
     return (
       <div className="App">     
-        <WarsawMap cinemas={filteredCinemas} />
-        <Navigation toggleSidebar={this.toggleSidebar} showSidebar={this.state.showSidebar}/>
-        <Sidebar cinemas={filteredCinemas} searchChange={this.onSearchChange} showSidebar={this.state.showSidebar}/>
+        <WarsawMap 
+          cinemas={filteredCinemas} 
+          isHovered={this.state.isHovered}
+          hoveredItem={this.state.hoveredItem} />
+        <Navigation 
+          toggleSidebar={this.toggleSidebar} 
+          showSidebar={this.state.showSidebar}/>
+        <Sidebar 
+          cinemas={filteredCinemas} 
+          searchChange={this.onSearchChange} 
+          showSidebar={this.state.showSidebar} 
+          mouseEnter={this.onMouseEnter} 
+          mouseLeave={this.onMouseLeave}/>
       </div>
     );
   }

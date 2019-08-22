@@ -3,7 +3,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kino Praha",
-				"description": "Jagiellońska 26, 03-719 Warszawa http://www.kinopraha.pl/"
+				"description": "Jagiellońska 26, 03-719 Warszawa",
+				"email": "http://www.kinopraha.pl/"
 			},
 			"geometry": {
 				"coordinates": [
@@ -17,7 +18,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kino Wisła",
-				"description": "plac Thomasa Woodrowa Wilsona 2, 01-615 Warszawa http://www.novekino.pl/kina/wisla"
+				"description": "plac Thomasa Woodrowa Wilsona 2, 01-615 Warszawa",
+				"email": "http://www.novekino.pl/kina/wisla"
 			},
 			"geometry": {
 				"coordinates": [
@@ -31,7 +33,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kinoteka",
-				"description": "Pałac Kultury i Nauki, plac Defilad 1, 00-901 Warszawa http://www.kinoteka.pl/"
+				"description": "Pałac Kultury i Nauki, plac Defilad 1, 00-901 Warszawa",
+				"email": "http://www.kinoteka.pl/"
 			},
 			"geometry": {
 				"coordinates": [
@@ -45,7 +48,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kino Luna",
-				"description": "Marszałkowska 28, 00-576 Warszawa http://www.kinoluna.pl/"
+				"description": "Marszałkowska 28, 00-576 Warszawa",
+				"email": "http://www.kinoluna.pl/"
 			},
 			"geometry": {
 				"coordinates": [
@@ -59,7 +63,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kino Muranów",
-				"description": "Andersa 5, 00-147 Warszawa http://kinomuranow.pl/"
+				"description": "Andersa 5, 00-147 Warszawa",
+				"email": "http://kinomuranow.pl/"
 			},
 			"geometry": {
 				"coordinates": [
@@ -73,7 +78,8 @@ const cinemas = [
 			"type": "Feature",
 			"properties": {
 				"title": "Kino Iluzjon",
-				"description": "Ludwika Narbutta 50A, 02-541 Warszawa http://www.iluzjon.fn.org.pl/"
+				"description": "Ludwika Narbutta 50A, 02-541 Warszawa",
+				"email": "http://www.iluzjon.fn.org.pl/"
 			},
 			"geometry": {
 				"coordinates": [

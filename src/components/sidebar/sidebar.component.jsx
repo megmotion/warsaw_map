@@ -4,7 +4,10 @@ import { SidebarContainer, InputContainer, StyledInput, List, ListItem} from './
 
 const Sidebar  = (props) => {
 	const listItems = props.cinemas.map((cinema) =>
-    	<ListItem key={cinema.properties.title}>
+    	<ListItem 
+    		key={cinema.properties.title}
+    		onMouseEnter={props.mouseEnter} 
+          	onMouseLeave={props.mouseLeave}>
 	      {cinema.properties.title}
 	    </ListItem>
 	)

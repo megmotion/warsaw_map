@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const NavigationContainer = styled.div`
   	position: absolute;
+    width:6vw;
   	top: 0;
   	right: 2vw;
    	transform: translate3d(0, 0, 0)
