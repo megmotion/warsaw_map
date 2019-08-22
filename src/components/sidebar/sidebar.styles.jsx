@@ -54,6 +54,7 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
 	transition: 0.4s;
+	cursor: pointer;
 	&:hover {
     	color: white;
   	}
