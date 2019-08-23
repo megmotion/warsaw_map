@@ -1,9 +1,6 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
 
-import { StyledPopup } from './map.styles';
-
-
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 class WarsawMap extends React.Component {
@@ -15,17 +12,17 @@ class WarsawMap extends React.Component {
 			zoom: 12
     	});
    		this.props.cinemas.forEach(cinema => {
-   			let description = `<strong>${cinema.properties.title}</strong>` +"<br>" 
-	   			+ cinema.properties.description + "<br>" 
-	   			+ `<strong>${cinema.properties.email}</strong>`;
-
+   			let description = `
+   				<strong>${cinema.properties.title}</strong><br> 
+   				${cinema.properties.description}<br>
+   				<strong>${cinema.properties.email}</strong>
+   			`;
    			let popup = new mapboxgl.Popup().setHTML(description)
 			let marker = new mapboxgl.Marker()
 			.setLngLat(cinema.geometry.coordinates)
 			.setPopup(popup)
 			.addTo(this.warsawMap);
 			cinema.marker=marker
-			const markerDiv = cinema.marker.getElement();
 		});   
 	} 
 	componentDidUpdate(prevProps){
@@ -33,9 +30,11 @@ class WarsawMap extends React.Component {
     		cinema.marker.remove()
 		})
 		this.props.cinemas.forEach(cinema => {
-			let description = `<strong>${cinema.properties.title}</strong>` +"<br>" 
-	   			+ cinema.properties.description + "<br>" 
-	   			+ `<strong>${cinema.properties.email}</strong>`;
+			let description = `
+   				<strong>${cinema.properties.title}</strong><br> 
+   				${cinema.properties.description}<br>
+   				<strong>${cinema.properties.email}</strong>
+   			`;
    			let popup = new mapboxgl.Popup().setHTML(description)
 			let marker = new mapboxgl.Marker()
 			.setLngLat(cinema.geometry.coordinates)
@@ -49,16 +48,10 @@ class WarsawMap extends React.Component {
 				cinema.marker.togglePopup();
 			}
 		})
-
 	} 
 
-
 	render() {
-		return (
-			<div>
-				<div style={{position:'absolute', top:0, bottom:0, width:'100%'}} ref={el => this.mapContainer = el} />
-			</div>
-		);
+		return (<div style={{position:'absolute', top:0, bottom:0, width:'100%'}} ref={el => this.mapContainer = el} />	);
 	}
 }
 export default WarsawMap;
