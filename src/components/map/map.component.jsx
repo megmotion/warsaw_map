@@ -18,17 +18,14 @@ class WarsawMap extends React.Component {
    			let description = `<strong>${cinema.properties.title}</strong>` +"<br>" 
 	   			+ cinema.properties.description + "<br>" 
 	   			+ `<strong>${cinema.properties.email}</strong>`;
-   			
+
    			let popup = new mapboxgl.Popup().setHTML(description)
-   			console.log(popup)
 			let marker = new mapboxgl.Marker()
 			.setLngLat(cinema.geometry.coordinates)
 			.setPopup(popup)
 			.addTo(this.warsawMap);
 			cinema.marker=marker
 			const markerDiv = cinema.marker.getElement();
-			markerDiv.addEventListener('mouseenter', () => cinema.marker.togglePopup());
-			markerDiv.addEventListener('mouseleave', () => cinema.marker.togglePopup());
 		});   
 	} 
 	componentDidUpdate(prevProps){
@@ -45,11 +42,6 @@ class WarsawMap extends React.Component {
 			.setPopup(popup)
 			.addTo(this.warsawMap);
 			cinema.marker=marker
-			const markerDiv = cinema.marker.getElement();
-			markerDiv.addEventListener('mouseenter', 
-				() => cinema.marker.togglePopup());
-			markerDiv.addEventListener('mouseleave', 
-				() => cinema.marker.togglePopup())
 		});
 
 		this.props.cinemas.forEach(cinema => {
