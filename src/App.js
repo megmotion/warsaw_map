@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   render() {
-    const { cinemas, searchfield } = this.state
+    const { cinemas, searchfield, isHovered, hoveredItem, showSidebar } = this.state
     const filteredCinemas = cinemas.filter(cinema =>{
       return cinema.properties.title.toLowerCase().includes(searchfield.toLowerCase());
     })
@@ -44,15 +44,15 @@ class App extends Component {
       <div className="App">     
         <WarsawMap 
           cinemas={filteredCinemas} 
-          isHovered={this.state.isHovered}
-          hoveredItem={this.state.hoveredItem} />
+          isHovered={isHovered}
+          hoveredItem={hoveredItem} />
         <Navigation 
           toggleSidebar={this.toggleSidebar} 
-          showSidebar={this.state.showSidebar}/>
+          showSidebar={showSidebar}/>
         <Sidebar 
           cinemas={filteredCinemas} 
           searchChange={this.onSearchChange} 
-          showSidebar={this.state.showSidebar} 
+          showSidebar={showSidebar} 
           mouseEnter={this.onMouseEnter} 
           mouseLeave={this.onMouseLeave}/>
       </div>

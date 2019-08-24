@@ -2,10 +2,10 @@ import React from 'react';
 
 import { NavigationContainer, NavigationButton } from './navigation.styles';
 
-const Navigation  = (props) => {
-	return(
-		<NavigationContainer showSidebar={props.showSidebar}>
-			<NavigationButton onClick={props.toggleSidebar}>☰</NavigationButton>
+const Navigation = ({showSidebar, toggleSidebar}) => {
+	return (
+		<NavigationContainer showSidebar={showSidebar}>
+			<NavigationButton onClick={toggleSidebar}>☰</NavigationButton>
 		</NavigationContainer>
 	)
 }
