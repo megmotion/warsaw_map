@@ -9,7 +9,7 @@ class WarsawMap extends React.Component {
 			let description = `
 				<strong>${cinema.properties.title}</strong><br> 
 				${cinema.properties.description}<br>
-				<strong>${cinema.properties.email}</strong>
+				<a href="${cinema.properties.page}" onclick="window.open(this.href,'_blank');return false;"><strong>${cinema.properties.page}</strong></a>
 			`;
 			let popup = new mapboxgl.Popup().setHTML(description)
 			let marker = new mapboxgl.Marker()

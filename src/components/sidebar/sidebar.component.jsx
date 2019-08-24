@@ -17,7 +17,7 @@ const Sidebar  = ({ cinemas, mouseEnter, mouseLeave, showSidebar, searchChange }
 			<InputContainer>
 				<StyledInput
 			        type='search'
-			        placeholder='filter cinemas'
+			        placeholder='Filter cinemas'
 			        onChange={searchChange}
 			      />
 			</InputContainer>

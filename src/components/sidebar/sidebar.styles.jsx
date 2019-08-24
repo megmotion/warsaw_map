@@ -25,7 +25,7 @@ const InputContainer = styled.div`
 
 const StyledInput = styled.input`
 	width: 65vw;
-	padding: 4px 4px;
+	padding: 4px 14px;
 	border: 0px;
 	border-radius: 8px;
 	margin: 0;
@@ -44,7 +44,7 @@ const StyledInput = styled.input`
 
 const List = styled.ul`
 	list-style-type: none;
-	padding-inline-start: 1.5vw;
+	padding-inline-start: 1vw;
 	color: #BBBBBB;
 	font-weight: 500;
 	font-size: 18px;
