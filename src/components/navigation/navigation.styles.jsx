@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 
 const NavigationContainer = styled.div`
-  	position: absolute;
-    width:10vw;
-  	top: 1vw;
-  	right: 2.5vw;
-   	transform: translate3d(0, 0, 0)
-  	transition: 0.5s ease;
-  	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
-    @media (min-width: 600px) {
-      width:6vw;
-      top: 4vw;
-      left: 40vw; 
-      ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-40vw, 0, 0);'};
-    }
-    @media (min-width: 768px) {
-      left: 20vw; 
-      ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-20vw, 0, 0);'};
+	position: absolute;
+  width: 15vw;
+	top: 1vw;
+	right: 0.5vw;
+ 	transform: translate3d(0, 0, 0)
+	transition: 0.5s ease;
+	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
+  @media (min-width: 600px) {
+    width:6vw;
+    top: 4vw;
+    left: 40vw; 
+    ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-40vw, 0, 0);'};
+  }
+  @media (min-width: 768px) {
+    left: 20vw; 
+    ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-20vw, 0, 0);'};
     }
 
   `
@@ -26,12 +26,13 @@ const NavigationButton = styled.button`
 	border-width: 0px;
 	color: #BBBBBB;
 	font-size: 24px;
-	padding: 6px 12px;
+	padding: 6px 10px;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
 	&:hover {
   	transform: scale(.9);
   	color: white;
+    padding: 6px 12px;
 	}
   cursor: pointer;
   @media (min-width: 600px) {
