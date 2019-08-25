@@ -24,20 +24,20 @@ const NavigationButton = styled.button`
 	border-radius: 10px;
 	border-width: 0px;
 	color: #BBBBBB;
-	font-size: 24px;
+	font-size: 20px;
 	padding: 4px 4px;
   width: 2em;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
-	&:hover {
-  	transform: scale(.9);
-  	color: white;
-    padding: 6px 12px;
-	}
   cursor: pointer;
   @media (min-width: 600px) {
     width: 2.5em;
-      font-size: 16px;
+    font-size: 16px;
+    &:hover {
+    transform: scale(.9);
+    color: white;
+    padding: 6px 12px;
+  }
     }
   @media (min-width: 768px) {
       width: 2.5em;
