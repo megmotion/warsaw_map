@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 const SidebarContainer = styled.div`
 	position: absolute; 
-	top: 5vw;
+	top: 8vw;
 	left: 0vw;
 	transform: translate3d(0, 0, 0);
 	transition: 0.5s ease;
 	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, -125%, 0);'};
 	@media (min-width: 600px) {
+		top: 4vw;
 		${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-100%, 0, 0);'};
 	}
 
@@ -16,8 +17,8 @@ const SidebarBox = styled.div`
 	background: rgba(63,177,206,0.8);
 	border-radius: 8px;
 	padding: 2vw;
-		@media (min-width: 600px) {
-		padding: 1vw;
+	@media (min-width: 600px) {
+	padding: 1vw;
 	}
 `
 const InputContainer = styled.div`
