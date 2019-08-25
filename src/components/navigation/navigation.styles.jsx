@@ -24,7 +24,7 @@ const NavigationButton = styled.button`
 	border-radius: 10px;
 	border-width: 0px;
 	color: #BBBBBB;
-	font-size: 16px;
+	font-size: 20px;
 	padding: 6px 12px;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
@@ -33,6 +33,9 @@ const NavigationButton = styled.button`
   	color: white;
 	}
   cursor: pointer;
+  @media (min-width: 600px) {
+      font-size: 16px;
+    }
   @media (min-width: 768px) {
       border-radius: 20px;
       font-size: 22px;

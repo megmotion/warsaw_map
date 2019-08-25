@@ -25,7 +25,7 @@ const InputContainer = styled.div`
 `;
 
 const StyledInput = styled.input`
-	width: 65vw;
+	width: 45vw;
 	padding: 4px 4px;
 	border: 0px;
 	border-radius: 8px;
