@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36595a9f3cd495b480f7a425df95e02b",
+    "revision": "d274a2a6b3b271a12389641ea904a220",
     "url": "/warsaw_map/index.html"
   },
   {
-    "revision": "26527c360af16f5830ad",
+    "revision": "0bc0e715234877a71166",
     "url": "/warsaw_map/static/css/main.34de6062.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/warsaw_map/static/js/2.1acaa2ce.chunk.js"
   },
   {
-    "revision": "26527c360af16f5830ad",
-    "url": "/warsaw_map/static/js/main.1e0f6ab2.chunk.js"
+    "revision": "0bc0e715234877a71166",
+    "url": "/warsaw_map/static/js/main.32cf0466.chunk.js"
   },
   {
     "revision": "77dfe570a1b98ffa169a",
