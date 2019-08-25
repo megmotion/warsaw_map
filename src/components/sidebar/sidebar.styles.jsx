@@ -6,7 +6,7 @@ const SidebarContainer = styled.div`
 	left: 0vw;
 	transform: translate3d(0, 0, 0);
 	transition: 0.5s ease;
-	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, -125%, 0);'};
+	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, -170%, 0);'};
 	@media (min-width: 600px) {
 		top: 4vw;
 		${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-100%, 0, 0);'};
