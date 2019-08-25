@@ -25,8 +25,8 @@ const NavigationButton = styled.button`
 	border-width: 0px;
 	color: #BBBBBB;
 	font-size: 24px;
-	padding: 6px 10px;
-  width: 2.5em;
+	padding: 4px 4px;
+  width: 2em;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
 	&:hover {
