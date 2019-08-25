@@ -33,7 +33,7 @@ class WarsawMap extends React.Component {
 			container: this.mapContainer,
 			style: 'mapbox://styles/mapbox/dark-v9',
 			center: [21, 52.25],
-			zoom: 12
+			zoom: 11
     	});
     	this.createMarker()
 	} 
