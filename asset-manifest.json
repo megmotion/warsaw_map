@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/warsaw_map/static/css/main.34de6062.chunk.css",
-    "main.js": "/warsaw_map/static/js/main.1bbbbf63.chunk.js",
-    "main.js.map": "/warsaw_map/static/js/main.1bbbbf63.chunk.js.map",
+    "main.js": "/warsaw_map/static/js/main.fcfc2e6a.chunk.js",
+    "main.js.map": "/warsaw_map/static/js/main.fcfc2e6a.chunk.js.map",
     "runtime~main.js": "/warsaw_map/static/js/runtime~main.e6b3dd9f.js",
     "runtime~main.js.map": "/warsaw_map/static/js/runtime~main.e6b3dd9f.js.map",
     "static/js/2.1acaa2ce.chunk.js": "/warsaw_map/static/js/2.1acaa2ce.chunk.js",
     "static/js/2.1acaa2ce.chunk.js.map": "/warsaw_map/static/js/2.1acaa2ce.chunk.js.map",
     "index.html": "/warsaw_map/index.html",
-    "precache-manifest.c054b35d03abee0c0eba68a95cd12d7b.js": "/warsaw_map/precache-manifest.c054b35d03abee0c0eba68a95cd12d7b.js",
+    "precache-manifest.b1032298a2168130cce4b32e444bb37a.js": "/warsaw_map/precache-manifest.b1032298a2168130cce4b32e444bb37a.js",
     "service-worker.js": "/warsaw_map/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/warsaw_map/static/css/main.34de6062.chunk.css.map"
   }
