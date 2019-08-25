@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 const NavigationContainer = styled.div`
   	position: absolute;
-    width:6vw;
+    width:10vw;
   	top: 1vw;
   	right: 2.5vw;
    	transform: translate3d(0, 0, 0)
   	transition: 0.5s ease;
   	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
     @media (min-width: 600px) {
+      width:6vw;
       top: 4vw;
       left: 40vw; 
       ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-40vw, 0, 0);'};
