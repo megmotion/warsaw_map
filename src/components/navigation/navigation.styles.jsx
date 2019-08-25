@@ -4,17 +4,16 @@ const NavigationContainer = styled.div`
   	position: absolute;
     width:6vw;
   	top: 0;
-  	right: 2vw;
+  	right: 0vw;
    	transform: translate3d(0, 0, 0)
   	transition: 0.5s ease;
   	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
     @media (min-width: 600px) {
-      top: 0;
+      top: 5vw;
       left: 40vw; 
       ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-40vw, 0, 0);'};
     }
     @media (min-width: 768px) {
-      top: 3vh;
       left: 20vw; 
       ${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(-20vw, 0, 0);'};
     }

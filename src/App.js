@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './components/navigation/navigation.component';
+import Title from './components/title/title.component';
 import WarsawMap from './components/map/map.component';
 import Sidebar from './components/sidebar/sidebar.component';
 import cinemas from './cinemas'
@@ -46,6 +47,7 @@ class App extends Component {
           cinemas={filteredCinemas} 
           isHovered={isHovered}
           hoveredItem={hoveredItem} />
+        <Title/>
         <Navigation 
           toggleSidebar={this.toggleSidebar} 
           showSidebar={showSidebar}/>

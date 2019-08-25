@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SidebarContainer, InputContainer, StyledInput, List, ListItem} from './sidebar.styles';
+import { SidebarContainer, SidebarBox, InputContainer, StyledInput, List, ListItem} from './sidebar.styles';
 
 const Sidebar  = ({ cinemas, mouseEnter, mouseLeave, showSidebar, searchChange }) => {
 	const listItems = cinemas.map((cinema) =>
@@ -14,14 +14,16 @@ const Sidebar  = ({ cinemas, mouseEnter, mouseLeave, showSidebar, searchChange }
 
 	return(
 		<SidebarContainer showSidebar={showSidebar}>	
-			<InputContainer>
-				<StyledInput
-			        type='search'
-			        placeholder='Filter cinemas'
-			        onChange={searchChange}
-			      />
-			</InputContainer>
-			<List>{listItems}</List>		
+			<SidebarBox>
+				<InputContainer>
+					<StyledInput
+				        type='search'
+				        placeholder='Filter cinemas'
+				        onChange={searchChange}
+				      />
+				</InputContainer>
+				<List>{listItems}</List>
+			</SidebarBox>		
 		</SidebarContainer>
 	)
 }
