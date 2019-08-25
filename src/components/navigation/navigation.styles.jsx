@@ -4,7 +4,7 @@ const NavigationContainer = styled.div`
   	position: absolute;
     width:6vw;
   	top: 1vw;
-  	right: 1vw;
+  	right: 2.5vw;
    	transform: translate3d(0, 0, 0)
   	transition: 0.5s ease;
   	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
@@ -24,7 +24,7 @@ const NavigationButton = styled.button`
 	border-radius: 10px;
 	border-width: 0px;
 	color: #BBBBBB;
-	font-size: 20px;
+	font-size: 24px;
 	padding: 6px 12px;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
