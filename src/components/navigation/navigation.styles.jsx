@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 const NavigationContainer = styled.div`
 	position: absolute;
-  width: 15vw;
 	top: 1vw;
-	right: 0.5vw;
+	right: 0vw;
  	transform: translate3d(0, 0, 0)
 	transition: 0.5s ease;
 	${({showSidebar}) => showSidebar ? '' : 'transform: translate3d(0, 0, 0);'};
@@ -27,6 +26,7 @@ const NavigationButton = styled.button`
 	color: #BBBBBB;
 	font-size: 24px;
 	padding: 6px 10px;
+  width: 2.5em;
 	transform: translateZ(0);
   transition: transform .2s ease-out;
 	&:hover {
@@ -36,9 +36,11 @@ const NavigationButton = styled.button`
 	}
   cursor: pointer;
   @media (min-width: 600px) {
+    width: 2.5em;
       font-size: 16px;
     }
   @media (min-width: 768px) {
+      width: 2.5em;
       border-radius: 20px;
       font-size: 22px;
       padding: 10px 20px;
